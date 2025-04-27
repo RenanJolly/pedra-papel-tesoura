@@ -1,0 +1,59 @@
+<html>
+
+  <head>
+    <title>Pedra Papel Tesoura</title>
+    <link href="./ppt.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"/>
+    <meta charset="utf-8"/>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header">Pedra Papel Tesoura</h1><p class="header">por Jollyann Shchenok</p>
+    </header>
+
+    <main>
+      <!-- ----------Painel do Menu---------- -->
+      <div id="menu">
+        <h2>Vamos jogar algumas rodadas de Pedra Papel Tesoura?</h2>
+        <p>Todo mundo já deve conhecer esse clássico, mas só para lembrar como funcionam as regras:</p>
+        <ul>
+          <li>Pedra vence Tesoura</li>
+          <li>Tesoura vence Papel</li>
+          <li>E papel vence Pedra</li>
+        </ul>
+        <p>O jogo acaba quando um de nós vencer ao completar <b>3 pontos</b> primeiro.</p>
+        <p>Clique em Jogar quando estiver pronto!</p>
+      </div>
+
+      <!-- ----------Painel do Jogo---------- -->
+      <div id="jogo" hidden>
+        <div id="placar">
+          <h3 class="placar">Você - 0</h3>
+          <h3 class="placar">Jolly - 0</h3>
+        </div>
+        
+        <img class="img" src="./Mídia/jollyNeutro.png"/>
+        <img class="img" src="./Mídia/jollySurpreso.png" hidden/>
+        <img class="img" src="./Mídia/jollyFeliz.png" hidden/>
+        <img class="img" src="./Mídia/jollyTriste.png" hidden/>
+        <img class="img" src="./Mídia/jollyBobo.png" hidden/>
+
+        <h2 id="frase">Faça sua escolha:</h2>
+
+        <button class="ppt">Pedra</button>
+        <button class="ppt">Papel</button>
+        <button class="ppt">Tesoura</button>
+        <button class="ppt" hidden>Próximo</button>
+      </div>
+
+      <button id="botao1" hidden>Jogar Novamente</button>
+      <button id="botao2">Jogar</button>
+    </main>
+
+    <script src="./ppt.js"></script>
+  </body>
+
+</html>
